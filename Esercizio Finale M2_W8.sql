@@ -200,6 +200,9 @@ JOIN Region R 		ON 		S.RegionID = R.RegionID;
 # ------------------------------------------------------------------------------
 # Query 3 — Prodotti con totale venduto > media dell’ultimo anno censito
 # ------------------------------------------------------------------------------
+# La media dell'ultimo anno censito è stata calcolata come "media delle quantità per singola transazione"
+# (ovvero la media dei valori presenti nella colonna Quantity per l'anno massimo, riga per riga).
+# Il totale venduto di ogni prodotto viene poi confrontato con questa soglia transazionale.
 
 SELECT
 			 ProductID
